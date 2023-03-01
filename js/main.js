@@ -10,7 +10,8 @@ const app = Vue.createApp({
         return
       }else{
         let todo ={
-          item: this.newItem
+          item: this.newItem,
+          isDone: false
         }
         this.todos.push(todo)
         this.newItem = ''
